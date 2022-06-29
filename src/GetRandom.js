@@ -1,7 +1,5 @@
+function getRandom(element) {
+    return element[Math.floor(Math.random() * element.length)];
+}
 
-
-// function GetRandom(element) {
-//     return element[Math.floor(Math.random() * element.length)];
-// }
-
-// export default GetRandom;
+export default getRandom;

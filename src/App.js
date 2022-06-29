@@ -1,28 +1,21 @@
-
-// function App() {
-//   return(
-//     <div className="wrapper">
-//       <header className="header">
-//         <h1 className="heading">
-//             Предсказания
-//         </h1>
-//       </header>
-//       <p id="prediction"></p>
-//       <button type="button" id="get-prediction">Получить</button>
-//     </div>
-   
-
-//   )
-// }
-
-// export default App;
+import "./App.scss"
+import Header from "./Header"
+import Prediction from "./Prediction";
+import Footer from "./Footer"
 
 
+function App() {
+    console.log('render')
+    return(
+      <div className="wrapper">
+        <Header />
+        <Prediction />
+        <Footer />
+      </div>
+    )
+  }
 
-
-
-
-
+export default App;
 
 
 

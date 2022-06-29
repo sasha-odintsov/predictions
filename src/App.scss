@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+}
+
+.wrapper {    
+    background: linear-gradient(140deg,  #4113c0, #8919bd, #ee7752);
+    background-size: 600% 600%;
+    animation: gradient 30s ease infinite;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;     
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

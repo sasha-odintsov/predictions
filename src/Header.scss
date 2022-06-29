@@ -1,0 +1,33 @@
+header {
+    padding: 5px;
+    .header-heading-link {
+        text-decoration: none;
+        color: black;
+
+        .header-heading {
+            font-size: 20px;
+            line-height: .9;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin: 0;
+            padding: 5px;
+            color: #fff;
+            background: linear-gradient(140deg, #12a4b8, #ac1cd8);
+            width: fit-content;
+            border-radius: 15px;
+            box-shadow: 1px 2px 1px #212658,
+            2px 2px 1px #212658, 
+            3px 3px 2px #212658;
+    
+            .header-heading-item {
+                display: block;
+                letter-spacing: 7px;
+            }
+            
+            .heading-item-special{
+                font-size: 38px;
+                letter-spacing: 5px;
+            }
+        }
+    }
+}
