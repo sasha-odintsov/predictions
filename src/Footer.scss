@@ -1,19 +1,20 @@
 .footer {
-    margin: 15px 5px;
+    margin: 10px 5px;
     text-align: end;
 
     .footer-item {
         color: #fff;
-        background: linear-gradient(140deg, #12a4b8, #ac1cd8);
+        background: linear-gradient(20deg, #12a4b8, #ac1cd8);
         padding: 5px;
         border-radius: 15px;
         box-shadow: 1px 2px 1px #212658,
         2px 2px 1px #212658, 
         3px 3px 2px #212658;
+        font-size: 14px;
 
         .footer-link {
             text-decoration: none;
-            color: #323685;
+            color: #212658;
         }
     }
 }

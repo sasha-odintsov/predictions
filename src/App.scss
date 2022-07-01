@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 .wrapper {    
-    background: linear-gradient(140deg,  #4113c0, #8919bd, #ee7752);
-    background-size: 600% 600%;
-    animation: gradient 30s ease infinite;
+    background: linear-gradient(140deg, #1333c0, #7338c0, #b341a9, #ee7752);
+    background-size: 300% 300%;
+    animation: gradient 20s ease infinite;
     height: 100vh; 
     display: flex;
     flex-direction: column;

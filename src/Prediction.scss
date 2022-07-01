@@ -1,11 +1,14 @@
 .prediction-wrap {
     text-align: center;
-    padding: 10px 40px;
+    padding: 10px 50px;
+    margin: 0 auto;
 
     #prediction {
         color: #fff;
         font-size: 18px;
-        height: 25px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
         text-shadow: 0 2px 1px #212658,
         1px 3px 1px #212658,
         2px 4px 1px #212658;
@@ -16,24 +19,59 @@
         box-shadow: 1px 2px 1px #212658,
         2px 2px 1px #212658, 
         3px 3px 2px #212658;
-        background: linear-gradient(140deg, #12a4b8, #ac1cd8);
+        background: linear-gradient(20deg, #12a4b8, #ac1cd8);
         border-radius: 15px;
         padding: 10px 30px;
-        font-family: 'Russo One', sans-serif;
+        font-family: 'Comfortaa', cursive;
         color: #212658;
         cursor: pointer;
+        font-size: 14px;
+        margin-top: 5px;
     }
 
     #get-prediction:hover {
-        background: linear-gradient(20deg, #12a4b8, #ac1cd8);
+        background: linear-gradient(140deg, #12a4b8, #ac1cd8);
     }
 
     #get-prediction:active{
-        background: linear-gradient(20deg, #0f8999, #9719bd);
+        background: linear-gradient(140deg, #0f8999, #9719bd);
         // border: 1px solid rgba(#000, .05);
         box-shadow: inset 1px 3px 0 #16193a, 
         1px 1px 1px rgba(#fff, .1);
         // text-shadow: -1px -1px 0 #171a3d;
         color: #16193a;
+    }
+
+    .prediction-progress-wrap {
+        width: 100px;
+        height: 8px;
+        border: 1px solid #212658;
+        box-shadow: 1px 1px 1px rgba(#fff, .1);
+        border-radius: 15px;
+        margin: 15px auto;
+        text-align: center;
+        
+        .prediction-progress-line {
+            background: linear-gradient(20deg, #6ad6e4, #db63ff);
+            border-radius: 15px;
+            width: 0;
+            height: inherit;
+            animation: progress 3s ease-in-out;
+        }
+    }
+
+    @keyframes progress {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width:499px) {
+    .prediction-wrap {
+        padding: 10px;
     }
 }
