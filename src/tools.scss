@@ -1,0 +1,8 @@
+$gradientElements: linear-gradient(20deg, #12a4b8, #ac1cd8);
+$colorMain: #212658;
+
+@mixin boxShadow {
+    box-shadow: 1px 2px 1px $colorMain,
+    2px 2px 1px $colorMain, 
+    3px 3px 2px $colorMain;
+} 

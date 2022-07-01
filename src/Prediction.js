@@ -9,7 +9,7 @@ function Prediction(props) {
     const [progress, setProgress] = useState();
     const handleClick = () => {
       setTimeout(() => setPrediction(getRandom(phrases)), 3000); 
-      setProgress('prediction-progress-line');
+      setProgress('prediction-progress-bar');
       setTimeout(() => setProgress (''), 3000);
     };
   
@@ -17,7 +17,6 @@ function Prediction(props) {
       async function getList() {
         const response = await fetch('http://localhost:3005');
         const data = await response.json();
-        console.log(data);
         phrases = data.map((el) => el.prediction);
       }
       getList();

@@ -5,15 +5,15 @@ import Footer from "./Footer"
 
 
 function App() {
-    console.log('render')
-    return(
-      <div className="wrapper">
-        <Header />
-        <Prediction />
-        <Footer />
-      </div>
-    )
-  }
+  console.log('render')
+  return(
+    <div className="wrapper">
+      <Header />
+      <Prediction />
+      <Footer />
+    </div>
+  )
+}
 
 export default App;
 

@@ -1,3 +1,5 @@
+@import "./tools.scss";
+
 .prediction-wrap {
     text-align: center;
     padding: 10px 50px;
@@ -9,21 +11,19 @@
         height: 100px;
         display: table-cell;
         vertical-align: middle;
-        text-shadow: 0 2px 1px #212658,
-        1px 3px 1px #212658,
-        2px 4px 1px #212658;
+        text-shadow: 0 2px 1px $colorMain,
+        1px 3px 1px $colorMain,
+        2px 4px 1px $colorMain;
     }
 
     #get-prediction {
         border: none;
-        box-shadow: 1px 2px 1px #212658,
-        2px 2px 1px #212658, 
-        3px 3px 2px #212658;
-        background: linear-gradient(20deg, #12a4b8, #ac1cd8);
+        @include boxShadow;
+        background: $gradientElements;
         border-radius: 15px;
         padding: 10px 30px;
         font-family: 'Comfortaa', cursive;
-        color: #212658;
+        color: $colorMain;
         cursor: pointer;
         font-size: 14px;
         margin-top: 5px;
@@ -35,23 +35,21 @@
 
     #get-prediction:active{
         background: linear-gradient(140deg, #0f8999, #9719bd);
-        // border: 1px solid rgba(#000, .05);
-        box-shadow: inset 1px 3px 0 #16193a, 
+        box-shadow: inset 1px 3px 0 darken($colorMain, 10%), 
         1px 1px 1px rgba(#fff, .1);
-        // text-shadow: -1px -1px 0 #171a3d;
-        color: #16193a;
+        color: darken($colorMain, 10%);
     }
 
     .prediction-progress-wrap {
         width: 100px;
         height: 8px;
-        border: 1px solid #212658;
+        border: 1px solid $colorMain;
         box-shadow: 1px 1px 1px rgba(#fff, .1);
         border-radius: 15px;
         margin: 15px auto;
         text-align: center;
         
-        .prediction-progress-line {
+        .prediction-progress-bar {
             background: linear-gradient(20deg, #6ad6e4, #db63ff);
             border-radius: 15px;
             width: 0;

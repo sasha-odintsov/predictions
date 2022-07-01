@@ -1,5 +1,8 @@
+@import "./tools.scss";
+
 header {
     padding: 5px;
+
     .header-heading-link {
         text-decoration: none;
         color: black;
@@ -14,9 +17,7 @@ header {
             background: linear-gradient(20deg, #12a4b8, #ac1cd8);
             width: fit-content;
             border-radius: 15px;
-            box-shadow: 1px 2px 1px #212658,
-            2px 2px 1px #212658, 
-            3px 3px 2px #212658;
+            @include boxShadow;
     
             .header-heading-item {
                 display: block;
