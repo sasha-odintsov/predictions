@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Predictions
 
+Application for getting predictions.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Up and Run
+
+```
+npm install
+node src/db.js // connect to database
+npm start // run the app in the development mode
+```
 
 ## Available Scripts
 
