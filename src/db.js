@@ -17,6 +17,18 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/eng', (req, res) => {
+  const uri = "mongodb+srv://sasha:111111qw@cluster0.35ad4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+  client.connect((err) => {
+    const collection = client.db("predictions").collection("listEng");
+    collection.find({}).toArray().then((data) => {
+      res.send(data);
+      client.close();
+    });    
+  });
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 }); 

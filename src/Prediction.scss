@@ -11,9 +11,7 @@
         height: 100px;
         display: table-cell;
         vertical-align: middle;
-        text-shadow: 0 2px 1px $colorMain,
-        1px 3px 1px $colorMain,
-        2px 4px 1px $colorMain;
+        @include textShadow;
     }
 
     #get-prediction {

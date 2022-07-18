@@ -1,17 +1,18 @@
 # Predictions
 
 Application for getting predictions.
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Up and Run
 
 ```
 npm install
-node src/db.js // connect to database
-npm start // run the app in the development mode
+node src/db.js 
+npm start 
 ```
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 

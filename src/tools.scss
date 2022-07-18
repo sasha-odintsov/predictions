@@ -6,3 +6,9 @@ $colorMain: #212658;
     2px 2px 1px $colorMain, 
     3px 3px 2px $colorMain;
 } 
+
+@mixin textShadow {
+    text-shadow: 0 2px 1px $colorMain,
+    1px 3px 1px $colorMain,
+    2px 4px 1px $colorMain;
+} 

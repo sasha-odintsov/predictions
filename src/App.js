@@ -1,15 +1,22 @@
 import "./App.scss"
-import Header from "./Header"
+import Header from "./Header";
 import Prediction from "./Prediction";
-import Footer from "./Footer"
+import Footer from "./Footer";
 
 
 function App() {
-  console.log('render')
   return(
     <div className="wrapper">
-      <Header />
-      <Prediction />
+      <Header 
+      title1={'Пред'}
+      title2={'ска'}
+      title3={'за'}
+      title4={'ния'}
+      />
+      <Prediction 
+      txtBtn='Получить' 
+      lang=''
+      />
       <Footer />
     </div>
   )
